@@ -2,15 +2,19 @@
   max-width: 120rem;
   // Center container within his parent element(which is the body)
   margin: 8rem auto;
-  background-color: var(--color-grey-light-2);
+  background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-dark);
   min-height: 50rem;
 }
 
 .header {
+  font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--color-grey-light-2);
+  border-bottom: 1px solid var(--color-grey-light-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 // Flex container
@@ -22,10 +26,18 @@
   background-color: var(--color-grey-dark-1);
   // flex: grow shrink width(basis)
   flex: 0 0 18%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .hotel-view {
+  // TEST
+  // background-color: orangered;
   background-color: #fff;
+  height: 80rem;
+
   // grow 1 --> grow as much as it can
   flex: 1;
 }
